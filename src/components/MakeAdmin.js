@@ -9,7 +9,7 @@ const MakeAdmin = () => {
 
   const onSubmit = (data) => {
     axios
-      .put("http://localhost:5000/addAdmin", data)
+      .put("https://agile-island-82672.herokuapp.com/addAdmin", data)
       .then((res) => {
         if (res?.data?.modifiedCount) {
           reset();

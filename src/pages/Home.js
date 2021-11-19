@@ -80,7 +80,7 @@ const Home = () => {
           </div>
         ) : (
           <Row>
-            {products?.slice(2, 8)?.map((product) => (
+            {products?.slice(0, 6)?.map((product) => (
               <Product key={product._id} product={product} />
             ))}
           </Row>

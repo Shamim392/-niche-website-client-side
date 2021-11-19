@@ -23,7 +23,7 @@ const Review = ({
       if (wantDelete) {
         const loading = toast.loading("Deleting...Please wait!");
         axios
-          .delete(`https://gerez-server.herokuapp.com/deleteReview/${id}`)
+          .delete(`https://agile-island-82672.herokuapp.com/deleteReview/${id}`)
           .then((res) => {
             toast.dismiss(loading);
             if (res.data) {
